@@ -1,0 +1,59 @@
+{
+	"folders": {},
+	"connections": {
+		"postgres-jdbc-1a040a70f13-2bc595aad9efe3f9": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "trilhaestudosql",
+			"save-password": true,
+			"configuration": {
+				"host": "dpg-da7nrt2d0e5s73abs3dg-a.oregon-postgres.render.com",
+				"port": "5432",
+				"database": "trilhaestudosql",
+				"url": "jdbc:postgresql://dpg-da7nrt2d0e5s73abs3dg-a.oregon-postgres.render.com:5432/trilhaestudosql",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-1a17fd3fb64-180e67813055bc5e": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "trilhaestudosql02",
+			"save-password": true,
+			"configuration": {
+				"host": "dpg-dbgjlj08v5cc73fs2c90-a.oregon-postgres.render.com",
+				"port": "5432",
+				"database": "trilhaestudosql02",
+				"url": "jdbc:postgresql://dpg-dbgjlj08v5cc73fs2c90-a.oregon-postgres.render.com:5432/trilhaestudosql02",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false"
+				},
+				"auth-model": "native"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Desenvolvimento",
+			"color": "255,255,255",
+			"colorDark": "255,255,255",
+			"description": "Banco de dados de desenvolvimento",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": true,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800,
+			"auto-close-connections": true,
+			"close-connections-period": 14400
+		}
+	}
+}

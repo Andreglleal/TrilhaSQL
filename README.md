@@ -7,7 +7,14 @@ Módulo 2 - Fundamentos SELECT - Material Didático
 🎯 Objetivo do Módulo
 Dominar os fundamentos da consulta de dados em SQL, aprendendo a selecionar, filtrar e organizar informações de forma eficiente.
 
+
+
 Módulo 3 - Filtros Avançados - Material Didático
 Objetivo do Módulo
 Aprofundar nas técnicas de filtragem de dados, utilizando operadores avançados como NOT, IN, BETWEEN e LIKE para criar consultas mais precisas e poderosas.
+
+
+Módulo 4 - Funções de String - Material Didático
+Objetivo do Módulo
+Dominar as principais funções de manipulação de texto em SQL para limpar, formatar e extrair informações de strings.
 

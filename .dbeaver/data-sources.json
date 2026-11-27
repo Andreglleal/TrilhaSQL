@@ -32,6 +32,25 @@
 				"url": "jdbc:postgresql://dpg-dbgjlj08v5cc73fs2c90-a.oregon-postgres.render.com:5432/trilhaestudosql02",
 				"configurationType": "MANUAL",
 				"type": "dev",
+				"closeIdleConnection": false,
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-1a219fb1c93-2ae0706551b3c61a": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "trilhasql03",
+			"save-password": true,
+			"configuration": {
+				"host": "dpg-dc3hsgnlk1mc73f0sta0-a.oregon-postgres.render.com",
+				"port": "5432",
+				"database": "trilhasql03",
+				"url": "jdbc:postgresql://dpg-dc3hsgnlk1mc73f0sta0-a.oregon-postgres.render.com:5432/trilhasql03",
+				"configurationType": "MANUAL",
+				"type": "dev",
 				"provider-properties": {
 					"@dbeaver-show-non-default-db@": "false"
 				},

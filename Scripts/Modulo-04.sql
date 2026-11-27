@@ -36,6 +36,52 @@ SELECT nome,
 LOWER(nome) AS nome_minusculo
 FROM categorias
 
+-- Aula 21 - Desafio 1: Extrair apenas o primeiro nome dos clientes
+-- Dica: Use a função POSITION(' ' IN nome) para encontrar o primeiro espaço.
+SELECT nome AS nome_completo, 
+substring(nome FROM 1 FOR POSITION (' ' IN nome) - 1) AS primeiro_nome
+FROM clientes 
+
+-- Aula 21 - Desafio 2: Extrair o DDD dos telefones dos clientes
+-- Considere que os telefones podem ter formatos diferentes, como '(XX) YYYYY-ZZZZ' ou 'XX YYYYY ZZZZ'.
+SELECT nome, telefone,
+substring(telefone FROM 2 FOR 3) AS DDD
+FROM clientes 
+WHERE telefone IS NOT NULL 
+AND  telefone LIKE  '(%)%'
+
+-- Aula 22 - Desafio 1: Limpar espaços extras nos nomes de produtos
+-- Suponha que alguns produtos foram cadastrados com espaços no início ou fim do nome. Mostre o nome original e o nome limpo.
+SELECT nome AS nome_original,
+TRIM(nome) AS nome_limpo
+FROM produtos 
+
+-- Aula 22 - Desafio 2: Remover espaços de emails antes de comparar
+-- Encontre os clientes cujo email, após a remoção dos espaços em branco
+-- no início e no final do texto, comece com a letra 'c' e termine com '.com'.
+SELECT nome, email
+FROM clientes 
+WHERE TRIM(email) LIKE 'c%.com'
+
+-- Aula 23 - Desafio 1: Mostrar produtos cujo nome tenha mais de 20 caracteres
+-- Exiba o nome do produto e o seu comprimento.
+SELECT nome,
+length(nome) AS tamanho_nome
+FROM produtos 
+WHERE length(nome) > 20
+
+-- Aula 23 - Desafio 2: Validar CPFs que não tenham exatamente 14 caracteres (incluindo pontos e traço)
+-- Liste os clientes com CPFs de tamanho inválido.
+SELECT nome, cpf, 
+LENGTH(cpf) AS tamanho_cpf
+FROM clientes
+WHERE LENGTH(cpf) <> 14
+AND cpf IS NOT NULL;
+
+
+
+
+
 
 
 
